@@ -32,10 +32,10 @@ public class HomePage extends AbstractPage {
     /**
      * This method is responsible for searching and selecting option.
      */
-    public void searchAndSelectOption() {
+    public void searchAndSelectOption(String location) {
         waitAndReturnElementClickable(acceptCookies).click();
         waitAndReturnElementClickable(rejectNotification).click();
-        waitAndReturnElementClickable(searchBox).sendKeys("Japan");
+        waitAndReturnElementClickable(searchBox).sendKeys(location);
         waitAndReturnElementClickable(japanListOption).click();
     }
 

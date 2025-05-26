@@ -26,10 +26,13 @@ public class AiraloApiTests extends BaseTestApi {
     @Test(dataProvider = "createOrderDataProvider", dataProviderClass = SimsOrderTestDataProvider.class)
     public void validateSimsOrder(Map<String, String> createOrderData, EsimOrderResponse esimOrderExpectedResponse, ITestContext context) {
 
+        log.infoMSG("Creating sim order with : " + createOrderData);
         Response response = endpointActions.createOrder(createOrderData);
         EsimOrderResponse esimOrderActualResponse = response.as(EsimOrderResponse.class);
 
+        log.infoMSG("Validating status code to be : " + HttpStatus.SC_OK);
         Assert.assertEquals(response.statusCode(), HttpStatus.SC_OK);
+        log.infoMSG("Validating response payload to be : " + esimOrderExpectedResponse);
         //Validating most of the fields and removing dynamic data to validate in next call
         Assertions.assertThat(esimOrderActualResponse).usingRecursiveComparison()
                 .ignoringFields(
@@ -53,7 +56,9 @@ public class AiraloApiTests extends BaseTestApi {
         Response response = endpointActions.listSimsOrders();
         EsimListResponse esimListResponse = response.as(EsimListResponse.class);
 
+        log.infoMSG("Validating status code to be : " + HttpStatus.SC_OK);
         Assert.assertEquals(response.statusCode(), HttpStatus.SC_OK);
+        log.infoMSG("Validating response payload to be : " + esimListExpectedResponse);
         Assertions.assertThat(new HashSet<>(testHelper.getOrderListActualResponse(esimOrderResponse, esimListResponse)))
                 .usingRecursiveComparison()
                 .isEqualTo(new HashSet<>(testHelper.getOrderListExpectedResponse(esimOrderResponse, esimListExpectedResponse)));

@@ -1,7 +1,9 @@
 package com.airalo.web.core.base;
 
 import com.airalo.common.config.TestConfig;
+import com.airalo.common.utils.LoggerUtility;
 import org.aeonbits.owner.ConfigFactory;
+import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -19,6 +21,7 @@ import org.testng.annotations.Parameters;
  */
 public class BaseTestWeb {
 
+    protected final LoggerUtility log = new LoggerUtility(LogManager.getLogger(getClass()));
     protected final TestConfig testConfig = ConfigFactory.create(TestConfig.class, System.getProperties());
 
     protected WebDriver driver;
