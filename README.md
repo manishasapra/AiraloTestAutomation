@@ -43,7 +43,7 @@ Primary reason was to use Selenium in order to automate the `airalo` application
 ## Framework Highlights
 
 ### Scalability :
-The framework is designed in such a way that it can easily be scaled to write mobile app test cases with very minium change.
+The framework is designed in such a way that it can easily be scaled to write web, API, and mobile app test cases with very minimum change.
 
 ### Maintainability :
-This framework is very easy to maintain as all the dependencies are at one place also `DataProviders` are being used which makes the case independent to run on any kind of data.
+This framework is very easy to maintain as all the dependencies are at one place and also `DataProviders` are being used which makes the case independent to run on any kind of data.
