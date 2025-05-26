@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Airalo Automation Suite" parallel="tests" thread-count="3" verbose="1">
+
+    <listeners>
+        <listener class-name="com.airalo.common.utils.TestCaseEventListener"/>
+    </listeners>
+
+    <test name="API Tests">
+        <classes>
+            <class name="com.airalo.api.scenarios.AiraloApiTests"/>
+        </classes>
+    </test>
+
+    <test name="Chrome Web Tests - Japan eSIM">
+        <parameter name="browser" value="safari"/>
+        <classes>
+            <class name="com.airalo.web.scenarios.AiraloJapanEsimTest"/>
+        </classes>
+    </test>
+
+    <test name="Firefox Web Tests - Japan eSIM">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.airalo.web.scenarios.AiraloJapanEsimTest"/>
+        </classes>
+    </test>
+
+</suite>

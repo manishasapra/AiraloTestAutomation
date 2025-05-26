@@ -1,0 +1,392 @@
+[
+  {
+    "id": 264608,
+    "created_at": "2025-05-25 22:20:43",
+    "iccid": "894000000000098048",
+    "lpa": "lpa.airalo.com",
+    "matching_id": "TEST",
+    "qrcode": "LPA:1$lpa.airalo.com$TEST",
+    "qrcode_url": "https://sandbox.airalo.com/qr?expires=1834525243&id=301356&signature=bc4029e5d24daeff9dad28bebaf2d8b7adc36029de8e48e11645e31e7c211a24",
+    "direct_apple_installation_url": "https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST",
+    "apn_type": "manual",
+    "apn_value": "airalo2",
+    "is_roaming": true,
+    "apn":
+    {
+      "ios":
+      {
+        "apn_type": "manual",
+        "apn_value": "airalo2"
+      },
+      "android":
+      {
+        "apn_type": "manual",
+        "apn_value": "airalo2"
+      }
+    },
+    "recycled": false,
+    "simable":
+    {
+      "id": 180107,
+      "code": "20250525-180107",
+      "package_id": "merhaba-7days-1gb",
+      "currency": "USD",
+      "quantity": 6,
+      "type": "sim",
+      "esim_type": "Prepaid",
+      "validity": "7",
+      "package": "Merhaba-1 GB - 7 Days",
+      "data": "1 GB",
+      "price": "4.5",
+      "created_at": "2025-05-25 22:20:43",
+      "manual_installation": "<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To manually activate the eSIM on your eSIM capable device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Manually enter the SM-DP+ Address and activation code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to \"airalo2\"(iOS)/Create a new APN as \"airalo2\" (Android) </li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>",
+      "qrcode_installation": "<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To activate the eSIM by scanning the QR code on your eSIM capable device you need to print or display this QR code on another device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Scan QR code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to \"airalo2\"(iOS)/Create a new APN as \"airalo2\" (Android)</li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>",
+      "installation_guides":
+      {
+        "en": "https://www.airalo.com/help/getting-started-with-airalo"
+      },
+      "net_price": 3.6,
+      "status":
+      {
+        "name": "Completed",
+        "slug": "completed"
+      },
+      "user":
+      {
+        "id": 1051,
+        "name": "QA Test",
+        "email": "qa@airalo.com",
+        "address": "Address",
+        "city": "City",
+        "postal_code": "000000",
+        "country_id": 1,
+        "created_at": "2024-08-21 15:55:35"
+      }
+    }
+  },
+  {
+    "id": 264607,
+    "created_at": "2025-05-25 22:20:43",
+    "iccid": "894000000000098047",
+    "lpa": "lpa.airalo.com",
+    "matching_id": "TEST",
+    "qrcode": "LPA:1$lpa.airalo.com$TEST",
+    "qrcode_url": "https://sandbox.airalo.com/qr?expires=1834525243&id=301355&signature=ad3d16aff5fb11e6b786ad9a7e9991903af6b227e0b6a736cf9f2afb60d94a9b",
+    "direct_apple_installation_url": "https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST",
+    "apn_type": "manual",
+    "apn_value": "airalo2",
+    "is_roaming": true,
+    "apn":
+    {
+      "ios":
+      {
+        "apn_type": "manual",
+        "apn_value": "airalo2"
+      },
+      "android":
+      {
+        "apn_type": "manual",
+        "apn_value": "airalo2"
+      }
+    },
+    "recycled": false,
+    "simable":
+    {
+      "id": 180107,
+      "code": "20250525-180107",
+      "package_id": "merhaba-7days-1gb",
+      "currency": "USD",
+      "quantity": 6,
+      "type": "sim",
+      "esim_type": "Prepaid",
+      "validity": "7",
+      "package": "Merhaba-1 GB - 7 Days",
+      "data": "1 GB",
+      "price": "4.5",
+      "created_at": "2025-05-25 22:20:43",
+      "manual_installation": "<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To manually activate the eSIM on your eSIM capable device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Manually enter the SM-DP+ Address and activation code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to \"airalo2\"(iOS)/Create a new APN as \"airalo2\" (Android) </li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>",
+      "qrcode_installation": "<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To activate the eSIM by scanning the QR code on your eSIM capable device you need to print or display this QR code on another device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Scan QR code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to \"airalo2\"(iOS)/Create a new APN as \"airalo2\" (Android)</li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>",
+      "installation_guides":
+      {
+        "en": "https://www.airalo.com/help/getting-started-with-airalo"
+      },
+      "net_price": 3.6,
+      "status":
+      {
+        "name": "Completed",
+        "slug": "completed"
+      },
+      "user":
+      {
+        "id": 1051,
+        "name": "QA Test",
+        "email": "qa@airalo.com",
+        "address": "Address",
+        "city": "City",
+        "postal_code": "000000",
+        "country_id": 1,
+        "created_at": "2024-08-21 15:55:35"
+      }
+    }
+  },
+  {
+    "id": 264606,
+    "created_at": "2025-05-25 22:20:43",
+    "iccid": "894000000000098046",
+    "lpa": "lpa.airalo.com",
+    "matching_id": "TEST",
+    "qrcode": "LPA:1$lpa.airalo.com$TEST",
+    "qrcode_url": "https://sandbox.airalo.com/qr?expires=1834525243&id=301354&signature=7e97ddbd0bc5f035db19689c5dea4c72bbb74afd8f72a8c408579aff1447a5bf",
+    "direct_apple_installation_url": "https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST",
+    "apn_type": "manual",
+    "apn_value": "airalo2",
+    "is_roaming": true,
+    "apn":
+    {
+      "ios":
+      {
+        "apn_type": "manual",
+        "apn_value": "airalo2"
+      },
+      "android":
+      {
+        "apn_type": "manual",
+        "apn_value": "airalo2"
+      }
+    },
+    "recycled": false,
+    "simable":
+    {
+      "id": 180107,
+      "code": "20250525-180107",
+      "package_id": "merhaba-7days-1gb",
+      "currency": "USD",
+      "quantity": 6,
+      "type": "sim",
+      "esim_type": "Prepaid",
+      "validity": "7",
+      "package": "Merhaba-1 GB - 7 Days",
+      "data": "1 GB",
+      "price": "4.5",
+      "created_at": "2025-05-25 22:20:43",
+      "manual_installation": "<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To manually activate the eSIM on your eSIM capable device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Manually enter the SM-DP+ Address and activation code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to \"airalo2\"(iOS)/Create a new APN as \"airalo2\" (Android) </li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>",
+      "qrcode_installation": "<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To activate the eSIM by scanning the QR code on your eSIM capable device you need to print or display this QR code on another device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Scan QR code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to \"airalo2\"(iOS)/Create a new APN as \"airalo2\" (Android)</li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>",
+      "installation_guides":
+      {
+        "en": "https://www.airalo.com/help/getting-started-with-airalo"
+      },
+      "net_price": 3.6,
+      "status":
+      {
+        "name": "Completed",
+        "slug": "completed"
+      },
+      "user":
+      {
+        "id": 1051,
+        "name": "QA Test",
+        "email": "qa@airalo.com",
+        "address": "Address",
+        "city": "City",
+        "postal_code": "000000",
+        "country_id": 1,
+        "created_at": "2024-08-21 15:55:35"
+      }
+    }
+  },
+  {
+    "id": 264605,
+    "created_at": "2025-05-25 22:20:43",
+    "iccid": "894000000000098045",
+    "lpa": "lpa.airalo.com",
+    "matching_id": "TEST",
+    "qrcode": "LPA:1$lpa.airalo.com$TEST",
+    "qrcode_url": "https://sandbox.airalo.com/qr?expires=1834525243&id=301353&signature=6a3d6d63a8254221206249352b2c134c37f3ff6dea49ebcc6cc9bdbebee08064",
+    "direct_apple_installation_url": "https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST",
+    "apn_type": "manual",
+    "apn_value": "airalo2",
+    "is_roaming": true,
+    "apn":
+    {
+      "ios":
+      {
+        "apn_type": "manual",
+        "apn_value": "airalo2"
+      },
+      "android":
+      {
+        "apn_type": "manual",
+        "apn_value": "airalo2"
+      }
+    },
+    "recycled": false,
+    "simable":
+    {
+      "id": 180107,
+      "code": "20250525-180107",
+      "package_id": "merhaba-7days-1gb",
+      "currency": "USD",
+      "quantity": 6,
+      "type": "sim",
+      "esim_type": "Prepaid",
+      "validity": "7",
+      "package": "Merhaba-1 GB - 7 Days",
+      "data": "1 GB",
+      "price": "4.5",
+      "created_at": "2025-05-25 22:20:43",
+      "manual_installation": "<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To manually activate the eSIM on your eSIM capable device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Manually enter the SM-DP+ Address and activation code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to \"airalo2\"(iOS)/Create a new APN as \"airalo2\" (Android) </li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>",
+      "qrcode_installation": "<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To activate the eSIM by scanning the QR code on your eSIM capable device you need to print or display this QR code on another device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Scan QR code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to \"airalo2\"(iOS)/Create a new APN as \"airalo2\" (Android)</li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>",
+      "installation_guides":
+      {
+        "en": "https://www.airalo.com/help/getting-started-with-airalo"
+      },
+      "net_price": 3.6,
+      "status":
+      {
+        "name": "Completed",
+        "slug": "completed"
+      },
+      "user":
+      {
+        "id": 1051,
+        "name": "QA Test",
+        "email": "qa@airalo.com",
+        "address": "Address",
+        "city": "City",
+        "postal_code": "000000",
+        "country_id": 1,
+        "created_at": "2024-08-21 15:55:35"
+      }
+    }
+  },
+  {
+    "id": 264604,
+    "created_at": "2025-05-25 22:20:43",
+    "iccid": "894000000000098044",
+    "lpa": "lpa.airalo.com",
+    "matching_id": "TEST",
+    "qrcode": "LPA:1$lpa.airalo.com$TEST",
+    "qrcode_url": "https://sandbox.airalo.com/qr?expires=1834525243&id=301352&signature=bc70589e252bd784704549e54e789d56cae4d70b7bc7e77fd1c73616dd3edfde",
+    "direct_apple_installation_url": "https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST",
+    "apn_type": "manual",
+    "apn_value": "airalo2",
+    "is_roaming": true,
+    "apn":
+    {
+      "ios":
+      {
+        "apn_type": "manual",
+        "apn_value": "airalo2"
+      },
+      "android":
+      {
+        "apn_type": "manual",
+        "apn_value": "airalo2"
+      }
+    },
+    "recycled": false,
+    "simable":
+    {
+      "id": 180107,
+      "code": "20250525-180107",
+      "package_id": "merhaba-7days-1gb",
+      "currency": "USD",
+      "quantity": 6,
+      "type": "sim",
+      "esim_type": "Prepaid",
+      "validity": "7",
+      "package": "Merhaba-1 GB - 7 Days",
+      "data": "1 GB",
+      "price": "4.5",
+      "created_at": "2025-05-25 22:20:43",
+      "manual_installation": "<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To manually activate the eSIM on your eSIM capable device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Manually enter the SM-DP+ Address and activation code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to \"airalo2\"(iOS)/Create a new APN as \"airalo2\" (Android) </li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>",
+      "qrcode_installation": "<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To activate the eSIM by scanning the QR code on your eSIM capable device you need to print or display this QR code on another device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Scan QR code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to \"airalo2\"(iOS)/Create a new APN as \"airalo2\" (Android)</li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>",
+      "installation_guides":
+      {
+        "en": "https://www.airalo.com/help/getting-started-with-airalo"
+      },
+      "net_price": 3.6,
+      "status":
+      {
+        "name": "Completed",
+        "slug": "completed"
+      },
+      "user":
+      {
+        "id": 1051,
+        "name": "QA Test",
+        "email": "qa@airalo.com",
+        "address": "Address",
+        "city": "City",
+        "postal_code": "000000",
+        "country_id": 1,
+        "created_at": "2024-08-21 15:55:35"
+      }
+    }
+  },
+  {
+    "id": 264603,
+    "created_at": "2025-05-25 22:20:43",
+    "iccid": "894000000000098043",
+    "lpa": "lpa.airalo.com",
+    "matching_id": "TEST",
+    "qrcode": "LPA:1$lpa.airalo.com$TEST",
+    "qrcode_url": "https://sandbox.airalo.com/qr?expires=1834525243&id=301351&signature=af6fd09b94054cb00f86c780deb867727466f6f72ebbe99a87c4db3fede6142e",
+    "direct_apple_installation_url": "https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST",
+    "apn_type": "manual",
+    "apn_value": "airalo2",
+    "is_roaming": true,
+    "apn":
+    {
+      "ios":
+      {
+        "apn_type": "manual",
+        "apn_value": "airalo2"
+      },
+      "android":
+      {
+        "apn_type": "manual",
+        "apn_value": "airalo2"
+      }
+    },
+    "recycled": false,
+    "simable":
+    {
+      "id": 180107,
+      "code": "20250525-180107",
+      "package_id": "merhaba-7days-1gb",
+      "currency": "USD",
+      "quantity": 6,
+      "type": "sim",
+      "esim_type": "Prepaid",
+      "validity": "7",
+      "package": "Merhaba-1 GB - 7 Days",
+      "data": "1 GB",
+      "price": "4.5",
+      "created_at": "2025-05-25 22:20:43",
+      "manual_installation": "<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To manually activate the eSIM on your eSIM capable device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Manually enter the SM-DP+ Address and activation code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to \"airalo2\"(iOS)/Create a new APN as \"airalo2\" (Android) </li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>",
+      "qrcode_installation": "<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To activate the eSIM by scanning the QR code on your eSIM capable device you need to print or display this QR code on another device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Scan QR code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to \"airalo2\"(iOS)/Create a new APN as \"airalo2\" (Android)</li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>",
+      "installation_guides":
+      {
+        "en": "https://www.airalo.com/help/getting-started-with-airalo"
+      },
+      "net_price": 3.6,
+      "status":
+      {
+        "name": "Completed",
+        "slug": "completed"
+      },
+      "user":
+      {
+        "id": 1051,
+        "name": "QA Test",
+        "email": "qa@airalo.com",
+        "address": "Address",
+        "city": "City",
+        "postal_code": "000000",
+        "country_id": 1,
+        "created_at": "2024-08-21 15:55:35"
+      }
+    }
+  }
+]
