@@ -14,6 +14,9 @@ import com.airalo.web.core.pages.HomePage;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
+/**
+ * This class contains common information for Web tests.
+ */
 public class BaseTestWeb {
 
     protected final TestConfig testConfig = ConfigFactory.create(TestConfig.class, System.getProperties());
@@ -24,6 +27,13 @@ public class BaseTestWeb {
     protected EsimPopupPage esimPopupPage;
 
 
+    /**
+     * This method is responsible for fetching correct webdriver.
+     *
+     * @param browser
+     * @return
+     * @throws Exception
+     */
     public WebDriver getWebDriver(String browser) throws Exception {
 
         switch (browser.toLowerCase()) {
@@ -48,6 +58,12 @@ public class BaseTestWeb {
         return driver;
     }
 
+    /**
+     * This method is responsible for setting up browser before tests.
+     *
+     * @param browser
+     * @throws Exception
+     */
     @Parameters("browser")
     @BeforeClass
     public void setup(@Optional("chrome") String browser) throws Exception {
@@ -57,6 +73,9 @@ public class BaseTestWeb {
         homePage = new HomePage(driver);
     }
 
+    /**
+     * This method is responsible for ending browser session after tests.
+     */
     @AfterClass
     public void tearDown() {
         if (driver != null) {

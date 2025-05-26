@@ -30,6 +30,7 @@ public class AiraloApiTests extends BaseTestApi {
         EsimOrderResponse esimOrderActualResponse = response.as(EsimOrderResponse.class);
 
         Assert.assertEquals(response.statusCode(), HttpStatus.SC_OK);
+        //Validating most of the fields and removing dynamic data to validate in next call
         Assertions.assertThat(esimOrderActualResponse).usingRecursiveComparison()
                 .ignoringFields(
                         "data.id",

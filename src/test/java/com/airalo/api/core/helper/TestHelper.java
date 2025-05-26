@@ -7,8 +7,18 @@ import com.airalo.api.core.models.Sim;
 
 import java.util.List;
 
+/**
+ * This class is responsible for updating test data.
+ */
 public class TestHelper {
 
+    /**
+     * This method is responsible for updating expected response with created order.
+     *
+     * @param esimOrderResponse
+     * @param esimListExpectedResponse
+     * @return
+     */
     public List<EsimData> getOrderListExpectedResponse(EsimOrderResponse esimOrderResponse, List<EsimData> esimListExpectedResponse) {
 
         int generatedId = esimOrderResponse.getData().getId();
@@ -29,6 +39,13 @@ public class TestHelper {
         return esimListExpectedResponse;
     }
 
+    /**
+     * This method is responsible for selecting created order data from long list.
+     *
+     * @param esimOrderResponse
+     * @param esimListResponse
+     * @return
+     */
     public List<EsimData> getOrderListActualResponse(EsimOrderResponse esimOrderResponse, EsimListResponse esimListResponse) {
         List<Integer> generatedSimIds = esimOrderResponse.getData().getSims().stream().map(Sim::getId).toList();
         List<EsimData> allSims = esimListResponse.getData();

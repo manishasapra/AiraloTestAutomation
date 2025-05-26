@@ -9,8 +9,17 @@ import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
+/**
+ * This method is responsible for calling all Airalo endpoints.
+ */
 public class EndpointActions extends BaseTestApi {
 
+    /**
+     * This method is responsible for creating orders on Airalo.
+     *
+     * @param createOrderParams
+     * @return
+     */
     public Response createOrder(Map<String, String> createOrderParams) {
         return given()
                 .contentType(ContentType.URLENC)
@@ -24,6 +33,11 @@ public class EndpointActions extends BaseTestApi {
                 .response();
     }
 
+    /**
+     * This method is responsible for fetching Airalo order list.
+     *
+     * @return
+     */
     public Response listSimsOrders() {
         return given()
                 .auth()
@@ -35,6 +49,11 @@ public class EndpointActions extends BaseTestApi {
                 .response();
     }
 
+    /**
+     * This method is responsible for generating bearer token.
+     *
+     * @return
+     */
     public String getCredentials() {
         Map<String, String> authParams = new HashMap<>();
         authParams.put("client_id", System.getenv("CLIENT_KEY"));

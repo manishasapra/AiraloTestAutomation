@@ -5,6 +5,9 @@ import org.aeonbits.owner.Config.LoadPolicy;
 import org.aeonbits.owner.Config.LoadType;
 import org.aeonbits.owner.Config.Sources;
 
+/**
+ * The class is responsible for keeping config information.
+ */
 @LoadPolicy(LoadType.MERGE)
 @Sources("classpath:env.properties")
 public interface TestConfig extends Config {

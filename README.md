@@ -1,4 +1,4 @@
-# Aiarlo Test Automation Framework (Selenium)
+# Airalo Test Automation Framework (Selenium)
 
 This repository contains the automation framework to perform testing on `airalo` web and api application.
 
@@ -32,6 +32,8 @@ Primary reason was to use Selenium in order to automate the `airalo` application
 
 - Prerequisites
   <pre>Ensure Java 20+ is installed.<br/>Install Maven (version 3.8+ recommended)</pre>
+- Export secrets
+  <pre>export CLIENT_KEY="<clinet_secret>"<br/>export CLIENT_SECRET="<clinet_secret>"</pre>
 - Run with testng
   <pre>mvn test -Dsurefire.suiteXmlFiles=test-suite.xml</pre>
 

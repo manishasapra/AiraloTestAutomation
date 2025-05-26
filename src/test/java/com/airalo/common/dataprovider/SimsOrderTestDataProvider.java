@@ -13,8 +13,17 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * This is a common data provider class.
+ */
 public class SimsOrderTestDataProvider {
 
+    /**
+     * This method is responsible for keeping data of create order.
+     *
+     * @return
+     * @throws FileNotFoundException
+     */
     @DataProvider(name = "createOrderDataProvider")
     public static Object[][] createOrderData() throws FileNotFoundException {
         Map<String, String> createOrderFormData = new LinkedHashMap<>();
@@ -30,6 +39,12 @@ public class SimsOrderTestDataProvider {
         };
     }
 
+    /**
+     * This method is responsible for keeping data of list orders.
+     *
+     * @return
+     * @throws FileNotFoundException
+     */
     @DataProvider(name = "listOrderDataProvider")
     public static Object[][] listOrderData() throws FileNotFoundException {
         Type esimListType = new TypeToken<List<EsimData>>() {}.getType();
@@ -41,6 +56,11 @@ public class SimsOrderTestDataProvider {
         };
     }
 
+    /**
+     * This method is responsible for keeping data of web app tests.
+     *
+     * @return
+     */
     @DataProvider(name = "japanEsimDetails")
     public Object[][] provideJapanEsimDetails() {
         return new Object[][]{

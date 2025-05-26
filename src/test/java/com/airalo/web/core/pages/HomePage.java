@@ -4,6 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+/**
+ * This method is responsible for keeping locator and methods for Home Page.
+ */
 public class HomePage extends AbstractPage {
 
     //OR for Home Page.
@@ -26,6 +29,9 @@ public class HomePage extends AbstractPage {
         super(driver);
     }
 
+    /**
+     * This method is responsible for searching and selecting option.
+     */
     public void searchAndSelectOption() {
         waitAndReturnElementClickable(acceptCookies).click();
         waitAndReturnElementClickable(rejectNotification).click();
@@ -33,6 +39,11 @@ public class HomePage extends AbstractPage {
         waitAndReturnElementClickable(japanListOption).click();
     }
 
+    /**
+     * This method is responsible for buying package.
+     *
+     * @return
+     */
     public EsimPopupPage buyPackage() {
         waitAndReturnElementClickable(buyNow).click();
         return new EsimPopupPage(driver);
