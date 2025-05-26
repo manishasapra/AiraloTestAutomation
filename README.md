@@ -34,7 +34,7 @@ Primary reason was to use Selenium in order to automate the `airalo` application
   <pre>Ensure Java 20+ is installed.<br/>Install Maven (version 3.8+ recommended)</pre>
 - Export secrets
   ```bash
-   export CLIENT_KEY="<client_secret>"
+   export CLIENT_KEY="<client_key>"
    export CLIENT_SECRET="<client_secret>"
 - Run with testng
   <pre>mvn test -Dsurefire.suiteXmlFiles=test-suite.xml</pre>
