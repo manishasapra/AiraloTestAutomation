@@ -1,0 +1,626 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Airalo Automation Setup</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Regression</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">May 26, 2025 02:25:15 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Sanity</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag="Sanity"
+          device="">
+          <div class="test-detail">
+            <p class="name">validateSimsOrder</p>
+            <p class="text-sm">
+              <span>2:25:16 pm</span> / <span>00:00:00:003</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validateSimsOrder</h5>
+<span class='badge badge-success'>05.26.2025 2:25:16 pm</span>
+<span class='badge badge-danger'>05.26.2025 2:25:16 pm</span>
+<span class='badge badge-default'>00:00:00:003</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Sanity</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:16 pm</td>
+        <td>
+          Creating sim order with : {quantity=6, package_id=merhaba-7days-1gb, type=sim}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag="Sanity"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyJapanEsimDetails</p>
+            <p class="text-sm">
+              <span>2:25:18 pm</span> / <span>00:00:01:664</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyJapanEsimDetails</h5>
+<span class='badge badge-success'>05.26.2025 2:25:18 pm</span>
+<span class='badge badge-danger'>05.26.2025 2:25:20 pm</span>
+<span class='badge badge-default'>00:00:01:664</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Sanity</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:18 pm</td>
+        <td>
+          Searching location : Japan
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:20 pm</td>
+        <td>
+          Validating status code to be : 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:20 pm</td>
+        <td>
+          Validating response payload to be : EsimOrderResponse(data=DataSection(packageId=merhaba-7days-1gb, quantity=6, type=sim, description=null, esimType=Prepaid, validity=7, packageName=Merhaba-1 GB - 7 Days, dataAmount=1 GB, price=4.5, createdAt=2025-05-25 21:46:29, id=180098, code=20250525-180098, currency=USD, manualInstallation=<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To manually activate the eSIM on your eSIM capable device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Manually enter the SM-DP+ Address and activation code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to "airalo2"(iOS)/Create a new APN as "airalo2" (Android) </li><li>Enable data roaming.</li></ol>, qrcodeInstallation=<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To activate the eSIM by scanning the QR code on your eSIM capable device you need to print or display this QR code on another device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Scan QR code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to "airalo2"(iOS)/Create a new APN as "airalo2" (Android)</li><li>Enable data roaming.</li></ol>, installationGuides={en=https://www.airalo.com/help/getting-started-with-airalo}, brandSettingsName=null, sims=[Sim(id=264564, createdAt=2025-05-25 21:46:29, iccId=894000000000098004, lpa=lpa.airalo.com, imSis=null, matchingId=TEST, qrCode=LPA:1$lpa.airalo.com$TEST, qrCodeUrl=https://sandbox.airalo.com/qr?expires=1834523189&id=301312&signature=1542338ccb013cb87f311b2572d63e951379553050633488ed0b35f70eb4dfe3, directAppleInstallationUrl=https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST, airaloCode=null, apnType=manual, apnValue=airalo2, isRoaming=true, confirmationCode=null), Sim(id=264565, createdAt=2025-05-25 21:46:29, iccId=894000000000098005, lpa=lpa.airalo.com, imSis=null, matchingId=TEST, qrCode=LPA:1$lpa.airalo.com$TEST, qrCodeUrl=https://sandbox.airalo.com/qr?expires=1834523189&id=301313&signature=bb5a8e91741cb51c6cecbcbb45a1cb1c3f651a737fe726f125eb0015cc13c402, directAppleInstallationUrl=https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST, airaloCode=null, apnType=manual, apnValue=airalo2, isRoaming=true, confirmationCode=null), Sim(id=264566, createdAt=2025-05-25 21:46:29, iccId=894000000000098006, lpa=lpa.airalo.com, imSis=null, matchingId=TEST, qrCode=LPA:1$lpa.airalo.com$TEST, qrCodeUrl=https://sandbox.airalo.com/qr?expires=1834523189&id=301314&signature=85841d80b4adb0ef3e50bd0911b4caab86eab759619087133565279ab1dc212a, directAppleInstallationUrl=https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST, airaloCode=null, apnType=manual, apnValue=airalo2, isRoaming=true, confirmationCode=null), Sim(id=264567, createdAt=2025-05-25 21:46:29, iccId=894000000000098007, lpa=lpa.airalo.com, imSis=null, matchingId=TEST, qrCode=LPA:1$lpa.airalo.com$TEST, qrCodeUrl=https://sandbox.airalo.com/qr?expires=1834523189&id=301315&signature=4e1dc3d7f3fb4e1d145f47f01a11251ad8d00deedf61ab3d3db247a25e26e4e7, directAppleInstallationUrl=https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST, airaloCode=null, apnType=manual, apnValue=airalo2, isRoaming=true, confirmationCode=null), Sim(id=264568, createdAt=2025-05-25 21:46:29, iccId=894000000000098008, lpa=lpa.airalo.com, imSis=null, matchingId=TEST, qrCode=LPA:1$lpa.airalo.com$TEST, qrCodeUrl=https://sandbox.airalo.com/qr?expires=1834523189&id=301316&signature=a4670d60f643fd54c6be98608e7b11fdaf22b1c8b14435fdebeeb5117382db83, directAppleInstallationUrl=https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST, airaloCode=null, apnType=manual, apnValue=airalo2, isRoaming=true, confirmationCode=null), Sim(id=264569, createdAt=2025-05-25 21:46:29, iccId=894000000000098009, lpa=lpa.airalo.com, imSis=null, matchingId=TEST, qrCode=LPA:1$lpa.airalo.com$TEST, qrCodeUrl=https://sandbox.airalo.com/qr?expires=1834523189&id=301317&signature=1a9498df96c8e0a9d8782d17ffa419fdb3efa3a5bee7a3762ff170a5d6315c10, directAppleInstallationUrl=https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST, airaloCode=null, apnType=manual, apnValue=airalo2, isRoaming=true, confirmationCode=null)]), meta=Meta(message=success))
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:20 pm</td>
+        <td>
+          Success of test cases and its details are : validateSimsOrder
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag="Sanity"
+          device="">
+          <div class="test-detail">
+            <p class="name">validateSimsInList</p>
+            <p class="text-sm">
+              <span>2:25:20 pm</span> / <span>00:00:01:207</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validateSimsInList</h5>
+<span class='badge badge-success'>05.26.2025 2:25:20 pm</span>
+<span class='badge badge-danger'>05.26.2025 2:25:21 pm</span>
+<span class='badge badge-default'>00:00:01:207</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Sanity</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:21 pm</td>
+        <td>
+          Selecting buy package
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:21 pm</td>
+        <td>
+          Validating status code to be : 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:21 pm</td>
+        <td>
+          Validating response payload to be : [EsimData(id=264608, createdAt=2025-05-25 22:20:43, iccId=894000000000098048, lpa=lpa.airalo.com, imsis=null, matchingId=TEST, confirmationCode=null, qrcode=LPA:1$lpa.airalo.com$TEST, qrcodeUrl=https://sandbox.airalo.com/qr?expires=1834525243&id=301356&signature=bc4029e5d24daeff9dad28bebaf2d8b7adc36029de8e48e11645e31e7c211a24, directAppleInstallationUrl=https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST, voucherCode=null, airaloCode=null, apnType=manual, apnValue=airalo2, isRoaming=true, brandSettingsName=null, msisdn=null, apn=Apn(ios=PlatformApn(apnType=manual, apnValue=airalo2), android=PlatformApn(apnType=manual, apnValue=airalo2)), recycled=false, recycledAt=null, simable=Simable(id=180107, code=20250525-180107, packageId=merhaba-7days-1gb, currency=USD, quantity=6, type=sim, description=null, esimType=Prepaid, validity=7, packageName=Merhaba-1 GB - 7 Days, data=1 GB, price=4.5, createdAt=2025-05-25 22:20:43, manualInstallation=<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To manually activate the eSIM on your eSIM capable device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Manually enter the SM-DP+ Address and activation code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to "airalo2"(iOS)/Create a new APN as "airalo2" (Android) </li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>, qrcodeInstallation=<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To activate the eSIM by scanning the QR code on your eSIM capable device you need to print or display this QR code on another device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Scan QR code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to "airalo2"(iOS)/Create a new APN as "airalo2" (Android)</li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>, installationGuides={en=https://www.airalo.com/help/getting-started-with-airalo}, text=null, voice=null, netPrice=3.6, status=Status(name=Completed, slug=completed), user=User(id=1051, name=QA Test, email=qa@airalo.com, mobile=null, address=Address, state=null, city=City, postalCode=000000, countryId=1, company=null, createdAt=2024-08-21 15:55:35))), EsimData(id=264607, createdAt=2025-05-25 22:20:43, iccId=894000000000098047, lpa=lpa.airalo.com, imsis=null, matchingId=TEST, confirmationCode=null, qrcode=LPA:1$lpa.airalo.com$TEST, qrcodeUrl=https://sandbox.airalo.com/qr?expires=1834525243&id=301355&signature=ad3d16aff5fb11e6b786ad9a7e9991903af6b227e0b6a736cf9f2afb60d94a9b, directAppleInstallationUrl=https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST, voucherCode=null, airaloCode=null, apnType=manual, apnValue=airalo2, isRoaming=true, brandSettingsName=null, msisdn=null, apn=Apn(ios=PlatformApn(apnType=manual, apnValue=airalo2), android=PlatformApn(apnType=manual, apnValue=airalo2)), recycled=false, recycledAt=null, simable=Simable(id=180107, code=20250525-180107, packageId=merhaba-7days-1gb, currency=USD, quantity=6, type=sim, description=null, esimType=Prepaid, validity=7, packageName=Merhaba-1 GB - 7 Days, data=1 GB, price=4.5, createdAt=2025-05-25 22:20:43, manualInstallation=<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To manually activate the eSIM on your eSIM capable device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Manually enter the SM-DP+ Address and activation code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to "airalo2"(iOS)/Create a new APN as "airalo2" (Android) </li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>, qrcodeInstallation=<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To activate the eSIM by scanning the QR code on your eSIM capable device you need to print or display this QR code on another device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Scan QR code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to "airalo2"(iOS)/Create a new APN as "airalo2" (Android)</li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>, installationGuides={en=https://www.airalo.com/help/getting-started-with-airalo}, text=null, voice=null, netPrice=3.6, status=Status(name=Completed, slug=completed), user=User(id=1051, name=QA Test, email=qa@airalo.com, mobile=null, address=Address, state=null, city=City, postalCode=000000, countryId=1, company=null, createdAt=2024-08-21 15:55:35))), EsimData(id=264606, createdAt=2025-05-25 22:20:43, iccId=894000000000098046, lpa=lpa.airalo.com, imsis=null, matchingId=TEST, confirmationCode=null, qrcode=LPA:1$lpa.airalo.com$TEST, qrcodeUrl=https://sandbox.airalo.com/qr?expires=1834525243&id=301354&signature=7e97ddbd0bc5f035db19689c5dea4c72bbb74afd8f72a8c408579aff1447a5bf, directAppleInstallationUrl=https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST, voucherCode=null, airaloCode=null, apnType=manual, apnValue=airalo2, isRoaming=true, brandSettingsName=null, msisdn=null, apn=Apn(ios=PlatformApn(apnType=manual, apnValue=airalo2), android=PlatformApn(apnType=manual, apnValue=airalo2)), recycled=false, recycledAt=null, simable=Simable(id=180107, code=20250525-180107, packageId=merhaba-7days-1gb, currency=USD, quantity=6, type=sim, description=null, esimType=Prepaid, validity=7, packageName=Merhaba-1 GB - 7 Days, data=1 GB, price=4.5, createdAt=2025-05-25 22:20:43, manualInstallation=<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To manually activate the eSIM on your eSIM capable device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Manually enter the SM-DP+ Address and activation code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to "airalo2"(iOS)/Create a new APN as "airalo2" (Android) </li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>, qrcodeInstallation=<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To activate the eSIM by scanning the QR code on your eSIM capable device you need to print or display this QR code on another device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Scan QR code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to "airalo2"(iOS)/Create a new APN as "airalo2" (Android)</li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>, installationGuides={en=https://www.airalo.com/help/getting-started-with-airalo}, text=null, voice=null, netPrice=3.6, status=Status(name=Completed, slug=completed), user=User(id=1051, name=QA Test, email=qa@airalo.com, mobile=null, address=Address, state=null, city=City, postalCode=000000, countryId=1, company=null, createdAt=2024-08-21 15:55:35))), EsimData(id=264605, createdAt=2025-05-25 22:20:43, iccId=894000000000098045, lpa=lpa.airalo.com, imsis=null, matchingId=TEST, confirmationCode=null, qrcode=LPA:1$lpa.airalo.com$TEST, qrcodeUrl=https://sandbox.airalo.com/qr?expires=1834525243&id=301353&signature=6a3d6d63a8254221206249352b2c134c37f3ff6dea49ebcc6cc9bdbebee08064, directAppleInstallationUrl=https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST, voucherCode=null, airaloCode=null, apnType=manual, apnValue=airalo2, isRoaming=true, brandSettingsName=null, msisdn=null, apn=Apn(ios=PlatformApn(apnType=manual, apnValue=airalo2), android=PlatformApn(apnType=manual, apnValue=airalo2)), recycled=false, recycledAt=null, simable=Simable(id=180107, code=20250525-180107, packageId=merhaba-7days-1gb, currency=USD, quantity=6, type=sim, description=null, esimType=Prepaid, validity=7, packageName=Merhaba-1 GB - 7 Days, data=1 GB, price=4.5, createdAt=2025-05-25 22:20:43, manualInstallation=<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To manually activate the eSIM on your eSIM capable device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Manually enter the SM-DP+ Address and activation code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to "airalo2"(iOS)/Create a new APN as "airalo2" (Android) </li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>, qrcodeInstallation=<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To activate the eSIM by scanning the QR code on your eSIM capable device you need to print or display this QR code on another device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Scan QR code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to "airalo2"(iOS)/Create a new APN as "airalo2" (Android)</li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>, installationGuides={en=https://www.airalo.com/help/getting-started-with-airalo}, text=null, voice=null, netPrice=3.6, status=Status(name=Completed, slug=completed), user=User(id=1051, name=QA Test, email=qa@airalo.com, mobile=null, address=Address, state=null, city=City, postalCode=000000, countryId=1, company=null, createdAt=2024-08-21 15:55:35))), EsimData(id=264604, createdAt=2025-05-25 22:20:43, iccId=894000000000098044, lpa=lpa.airalo.com, imsis=null, matchingId=TEST, confirmationCode=null, qrcode=LPA:1$lpa.airalo.com$TEST, qrcodeUrl=https://sandbox.airalo.com/qr?expires=1834525243&id=301352&signature=bc70589e252bd784704549e54e789d56cae4d70b7bc7e77fd1c73616dd3edfde, directAppleInstallationUrl=https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST, voucherCode=null, airaloCode=null, apnType=manual, apnValue=airalo2, isRoaming=true, brandSettingsName=null, msisdn=null, apn=Apn(ios=PlatformApn(apnType=manual, apnValue=airalo2), android=PlatformApn(apnType=manual, apnValue=airalo2)), recycled=false, recycledAt=null, simable=Simable(id=180107, code=20250525-180107, packageId=merhaba-7days-1gb, currency=USD, quantity=6, type=sim, description=null, esimType=Prepaid, validity=7, packageName=Merhaba-1 GB - 7 Days, data=1 GB, price=4.5, createdAt=2025-05-25 22:20:43, manualInstallation=<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To manually activate the eSIM on your eSIM capable device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Manually enter the SM-DP+ Address and activation code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to "airalo2"(iOS)/Create a new APN as "airalo2" (Android) </li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>, qrcodeInstallation=<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To activate the eSIM by scanning the QR code on your eSIM capable device you need to print or display this QR code on another device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Scan QR code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to "airalo2"(iOS)/Create a new APN as "airalo2" (Android)</li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>, installationGuides={en=https://www.airalo.com/help/getting-started-with-airalo}, text=null, voice=null, netPrice=3.6, status=Status(name=Completed, slug=completed), user=User(id=1051, name=QA Test, email=qa@airalo.com, mobile=null, address=Address, state=null, city=City, postalCode=000000, countryId=1, company=null, createdAt=2024-08-21 15:55:35))), EsimData(id=264603, createdAt=2025-05-25 22:20:43, iccId=894000000000098043, lpa=lpa.airalo.com, imsis=null, matchingId=TEST, confirmationCode=null, qrcode=LPA:1$lpa.airalo.com$TEST, qrcodeUrl=https://sandbox.airalo.com/qr?expires=1834525243&id=301351&signature=af6fd09b94054cb00f86c780deb867727466f6f72ebbe99a87c4db3fede6142e, directAppleInstallationUrl=https://esimsetup.apple.com/esim_qrcode_provisioning?carddata=LPA:1$lpa.airalo.com$TEST, voucherCode=null, airaloCode=null, apnType=manual, apnValue=airalo2, isRoaming=true, brandSettingsName=null, msisdn=null, apn=Apn(ios=PlatformApn(apnType=manual, apnValue=airalo2), android=PlatformApn(apnType=manual, apnValue=airalo2)), recycled=false, recycledAt=null, simable=Simable(id=180107, code=20250525-180107, packageId=merhaba-7days-1gb, currency=USD, quantity=6, type=sim, description=null, esimType=Prepaid, validity=7, packageName=Merhaba-1 GB - 7 Days, data=1 GB, price=4.5, createdAt=2025-05-25 22:20:43, manualInstallation=<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To manually activate the eSIM on your eSIM capable device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Manually enter the SM-DP+ Address and activation code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to "airalo2"(iOS)/Create a new APN as "airalo2" (Android) </li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>, qrcodeInstallation=<p><b>eSIM name:</b> Merhaba</p><p><b>Coverage: </b>Turkey</p><p><b>To activate the eSIM by scanning the QR code on your eSIM capable device you need to print or display this QR code on another device:</b></p><ol><li>Settings > Cellular/Mobile > Add Cellular/Mobile Plan.</li><li>Scan QR code.</li><li>Confirm eSIM plan details.</li><li>Label the eSIM.</li></ol><p><b>To access Data:</b></p><ol><li>Locate the APN settings in your settings menu.</li><li>Update the APN to "airalo2"(iOS)/Create a new APN as "airalo2" (Android)</li><li>Enable data roaming.</li></ol><p><b>To top-up:</b></p><p>Visit airalo.com/my-esims or if purchased through the Airalo website/app visit “My eSIMs” tab.</p><p><br></p>, installationGuides={en=https://www.airalo.com/help/getting-started-with-airalo}, text=null, voice=null, netPrice=3.6, status=Status(name=Completed, slug=completed), user=User(id=1051, name=QA Test, email=qa@airalo.com, mobile=null, address=Address, state=null, city=City, postalCode=000000, countryId=1, company=null, createdAt=2024-08-21 15:55:35)))]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:21 pm</td>
+        <td>
+          Success of test cases and its details are : validateSimsInList
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag="Sanity"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyJapanEsimDetails</p>
+            <p class="text-sm">
+              <span>2:25:22 pm</span> / <span>00:00:03:377</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyJapanEsimDetails</h5>
+<span class='badge badge-success'>05.26.2025 2:25:22 pm</span>
+<span class='badge badge-danger'>05.26.2025 2:25:25 pm</span>
+<span class='badge badge-default'>00:00:03:377</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Sanity</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:22 pm</td>
+        <td>
+          Searching location : Japan
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:22 pm</td>
+        <td>
+          Validating title to be : Moshi Moshi
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:23 pm</td>
+        <td>
+          Validating coverage to be : Japan
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:23 pm</td>
+        <td>
+          Validating data to be : 1 GB
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:23 pm</td>
+        <td>
+          Validating validity to be : 7 Days
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:23 pm</td>
+        <td>
+          Validating price to be : 4.50 €
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:23 pm</td>
+        <td>
+          Success of test cases and its details are : verifyJapanEsimDetails
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:24 pm</td>
+        <td>
+          Selecting buy package
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:25 pm</td>
+        <td>
+          Validating title to be : Moshi Moshi
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:25 pm</td>
+        <td>
+          Validating coverage to be : Japan
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:25 pm</td>
+        <td>
+          Validating data to be : 1 GB
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:25 pm</td>
+        <td>
+          Validating validity to be : 7 Days
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:25 pm</td>
+        <td>
+          Validating price to be : 4.50 €
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:25:25 pm</td>
+        <td>
+          Success of test cases and its details are : verifyJapanEsimDetails
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">Sanity</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Sanity</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:25:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>validateSimsOrder</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:25:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>verifyJapanEsimDetails</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:25:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>validateSimsInList</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:25:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>verifyJapanEsimDetails</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>May 26, 2025 02:25:15 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>May 26, 2025 02:25:33 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>4</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>4</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>23</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"validateSimsOrder":0.003,"verifyJapanEsimDetails":1.664,"validateSimsInList":1.207,"verifyJapanEsimDetails":3.377
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>Sanity</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Company</td>
+<td>Airalo</td>
+</tr>
+<tr>
+<td>Brand</td>
+<td>Airalo</td>
+</tr>
+<tr>
+<td>OS</td>
+<td>Mac OS X</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 4,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 0,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 23
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
